@@ -13,6 +13,8 @@
 		58D62B141BFE886E005C5BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D62B121BFE886E005C5BFB /* Main.storyboard */; };
 		58D62B161BFE886E005C5BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D62B151BFE886E005C5BFB /* Assets.xcassets */; };
 		58D62B191BFE886E005C5BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D62B171BFE886E005C5BFB /* LaunchScreen.storyboard */; };
+		ECD49DA61BFE903400C40F48 /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD49DA51BFE903400C40F48 /* DraggableImageView.xib */; };
+		ECD49DA91BFE906800C40F48 /* DraggableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD49DA81BFE906800C40F48 /* DraggableImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		58D62B151BFE886E005C5BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D62B181BFE886E005C5BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D62B1A1BFE886E005C5BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD49DA51BFE903400C40F48 /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
+		ECD49DA71BFE906800C40F48 /* DraggableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableImageView.h; sourceTree = "<group>"; };
+		ECD49DA81BFE906800C40F48 /* DraggableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,9 @@
 				58D62B171BFE886E005C5BFB /* LaunchScreen.storyboard */,
 				58D62B1A1BFE886E005C5BFB /* Info.plist */,
 				58D62B091BFE886E005C5BFB /* Supporting Files */,
+				ECD49DA51BFE903400C40F48 /* DraggableImageView.xib */,
+				ECD49DA71BFE906800C40F48 /* DraggableImageView.h */,
+				ECD49DA81BFE906800C40F48 /* DraggableImageView.m */,
 			);
 			path = Tinder;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 			files = (
 				58D62B191BFE886E005C5BFB /* LaunchScreen.storyboard in Resources */,
 				58D62B161BFE886E005C5BFB /* Assets.xcassets in Resources */,
+				ECD49DA61BFE903400C40F48 /* DraggableImageView.xib in Resources */,
 				58D62B141BFE886E005C5BFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +161,7 @@
 			files = (
 				58D62B111BFE886E005C5BFB /* CardsViewController.m in Sources */,
 				58D62B0E1BFE886E005C5BFB /* AppDelegate.m in Sources */,
+				ECD49DA91BFE906800C40F48 /* DraggableImageView.m in Sources */,
 				58D62B0B1BFE886E005C5BFB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
