@@ -10,6 +10,7 @@
 
 @interface DraggableImageView ()
 @property (nonatomic, assign) CGPoint originalCenter;
+@property (nonatomic, assign) CGPoint originalGestureLocation;
 @end
 
 @implementation DraggableImageView
@@ -48,12 +49,22 @@
     
     if (sender.state == UIGestureRecognizerStateBegan) {
         self.originalCenter = self.contentView.center;
+        self.originalGestureLocation = [sender locationInView:self];
     } else if (sender.state == UIGestureRecognizerStateChanged) {
+        CGFloat multiplier;
+        if (self.originalGestureLocation.y > self.originalCenter.y) {
+            multiplier = -1;
+        } else {
+            multiplier = 1;
+        }
+        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI / 180 * translation.x / 15 * multiplier);
+        [self setTransform:transform];
         CGFloat newX = self.originalCenter.x + translation.x;
         self.contentView.center = CGPointMake(newX, self.originalCenter.y);
     } else if (sender.state == UIGestureRecognizerStateEnded) {
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:.2 animations:^{
             self.contentView.center = self.originalCenter;
+            [self setTransform:CGAffineTransformMakeRotation(0)];
         }];
     }
 }
